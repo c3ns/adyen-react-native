@@ -24,10 +24,10 @@ allprojects {
     configurations {
         all {
             resolutionStrategy {
-                force "android.arch.lifecycle:livedata-core:${rootProject.ext.lifecycleVersion}"
-                force "android.arch.lifecycle:runtime:${rootProject.ext.lifecycleVersion}"
-                force "android.arch.lifecycle:viewmodel:${rootProject.ext.lifecycleVersion}"
-                force "android.arch.core:runtime:${rootProject.ext.lifecycleVersion}"
+                force "android.arch.lifecycle:livedata-core:+"
+                force "android.arch.lifecycle:runtime:+"
+                force "android.arch.lifecycle:viewmodel:+"
+                force "android.arch.core:runtime:+"
             }
         }
     }
@@ -35,10 +35,12 @@ allprojects {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile "android.arch.lifecycle:extensions:${rootProject.ext.lifecycleVersion}"
-    compile "android.arch.core:runtime:${rootProject.ext.lifecycleVersion}"
-    compile "android.arch.lifecycle:viewmodel:${rootProject.ext.lifecycleVersion}"
-    compile "com.adyen.checkout:ui:2.3.2"
-    compile "com.adyen.checkout:core-card:2.3.2"
-    compile "com.adyen.checkout:util:2.3.2"
+    compile "android.arch.lifecycle:extensions:+"
+    compile "android.arch.core:runtime:+"
+    compile "android.arch.lifecycle:viewmodel:+"
+    compile "com.adyen.checkout:ui:2.4.5"
+    compile "com.adyen.checkout:core-card:2.4.5"
+    compile "com.adyen.checkout:core:2.4.5"
+    compile "com.adyen.checkout:util:2.4.5"
+    compile "com.adyen.checkout:base:2.4.5"
 }
